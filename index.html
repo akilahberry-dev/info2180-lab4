@@ -8,7 +8,19 @@
   <script src="app.js" defer></script>
 </head>
 <body>
-  <h1>Avengers Character Search</h1>
-  <button id="search-btn" type="button">Search</button>
+  <header>
+    <h1>Avengers Character Search</h1>
+  </header>
+
+  <main>
+    <label for="query">Search by Full Name or Alias</label>
+    <div class="search-row">
+      <input type="text" id="query" placeholder="e.g. Captain America or Steve Rogers">
+      <button id="search-btn" type="button">Search</button>
+    </div>
+
+    <h2>Result</h2>
+    <div id="result"></div>
+  </main>
 </body>
 </html>
