@@ -13,11 +13,13 @@
   </header>
 
   <main>
-    <label for="query">Search by Full Name or Alias</label>
-    <div class="search-row">
-      <input type="text" id="query" placeholder="e.g. Captain America or Steve Rogers">
-      <button id="search-btn" type="button">Search</button>
-    </div>
+    <form id="search-form">
+      <label for="query">Search by Full Name or Alias</label>
+     <div class="search-row">
+       <input type="text" id="query" name="query" placeholder="e.g. Captain America or Steve Rogers">
+       <button id="search-btn" type="submit">Search</button>
+     </div>
+    </form>
 
     <h2>Result</h2>
     <div id="result"></div>

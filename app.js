@@ -1,8 +1,10 @@
-const searchBtn = document.getElementById("search-btn");
+const searchForm = document.getElementById("search-form");
 const queryInput = document.getElementById("query");
 const result = document.getElementById("result");
 
-searchBtn.addEventListener("click", async () => {
+searchForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
   const query = queryInput.value.trim();
   const url = `superheroes.php?query=${encodeURIComponent(query)}`;
 
